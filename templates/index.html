@@ -9,7 +9,6 @@
     <h1>LUFFY MACHIDA!</h1>
     <p>Give up on your dreams and die</p>
     <a href="{{ url_for('login') }}">Login</a><br>
-    <a href="{{ url_for('register') }}">Register</a>
     {% if session.logged_in %}
         Logged in as {{session.username}} |  
         <a href="/logout">Log out</a> 
