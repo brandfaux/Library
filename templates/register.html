@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Page</title>
-</head>
-<body>
-    <h1>Registration Form</h1>
+{% extends "base.html" %}
+
+    {% block content %}
+    <h1>Registration Form</h1><br><br>
     <form action="/register" method="post">
         <!-- Your form fields for username and password -->
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="password" placeholder="Password">
+        <input type="text" name="username" placeholder="Username"><br><br>
+        <input type="password" name="password" placeholder="Password"><br><br>
         <button type="submit">Register</button>
-    </form>    
-</body>
-</html>
+    </form>
+    {% endblock %}

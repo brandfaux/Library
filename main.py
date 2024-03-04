@@ -1,5 +1,8 @@
 from flask import Flask, redirect, url_for, render_template, request, session
 from flask_mysqldb import MySQL
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
 
 app = Flask(__name__)
 app.secret_key = 'hello'
@@ -19,6 +22,10 @@ def db_changes():
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/user/<name>')
+def user(name):
+    return render_template("taps.html", user_name=name)
 
 @app.route('/login', methods=['POST', 'GET'])
 # this is login
@@ -71,7 +78,7 @@ def registration():
 def home_user():
     if 'user' in session:
         user = session['user']
-        return f'Hello {user}'
+        return render_template('user.html', username=user)
     else:
         return redirect(url_for('login'))
 
@@ -80,6 +87,25 @@ def home_user():
 def logout():
     session.pop('user', None)
     return redirect(url_for('login'))
+
+#custom error pages
+
+#Invalid URL
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template("404.html"), 404
+
+#internal server error
+
+@app.errorhandler(500)
+def page_not_found(e):
+    return render_template("500.html"), 500
+
+
+#create a form
+class NamerForm(FlaskForm):
+    name = StringField ()
 
 
 if __name__ == '__main__':
