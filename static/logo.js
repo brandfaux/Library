@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
       // Adjust opacity gradually to 40% after the animation finishes
       setTimeout(function() {
           logoContainer.style.animation = 'opacityToForty 1s ease forwards';
-      }, 1000); // 1000 milliseconds = 1 second (duration of fadeOut animation)
+      }, 1000); // 1000 milliseconds = 1 second (duration of fadeOut animations)
   }, 4000); // 4000 milliseconds = 4 seconds
 });
