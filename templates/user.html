@@ -1,5 +1,83 @@
 {% extends "base.html" %}
 
     {% block content %}
-        <h1>Hello {{username}}</h1>
+        <h1 style="color: rgb(219, 12, 108);">Hello, {{username}}</h1>
+        <br>
+        <h1>Read the following poem</h1>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .poetry-container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    p {
+      color: #666;
+      text-align: justify;
+    }
+  </style>
+</head>
+<body>
+
+<div class="poetry-container">
+  <h1>POETRY</h1>
+  <br><br>
+  <p>
+    In the dance of dawn's first light, we seek,<br>
+    The essence of existence, so unique.<br>
+    In whispers of the wind and the song of the sea,<br>
+    Lies the riddle of life's mystery.
+  </p>
+  <p>
+    What is the meaning that we pursue?<br>
+    In every heartbeat, a clue imbued.<br>
+    Through laughter and tears, joy and strife,<br>
+    We navigate the labyrinth of life.
+  </p>
+  <p>
+    Is it in love's tender embrace we find,<br>
+    The purpose that eternally binds?<br>
+    Or in the quest for knowledge vast,<br>
+    Do we uncover truth at last?
+  </p>
+  <p>
+    Perhaps it dwells in acts of grace,<br>
+    In kindness shown in every place.<br>
+    Or in the courage to stand tall and strong,<br>
+    Against the currents that pull us along.
+  </p>
+  <p>
+    Yet, amidst the chaos and the strife,<br>
+    We glimpse the beauty of this life.<br>
+    In moments fleeting, yet profound,<br>
+    The meaning of life is found.
+  </p>
+  <p>
+    For in the journey, not the end,<br>
+    We discover treasures, round each bend.<br>
+    In connections forged, in dreams pursued,<br>
+    In the simple joys, in gratitude.
+  </p>
+  <p>
+    So let us cherish each passing day,<br>
+    Embrace the mystery, come what may.<br>
+    For in the tapestry of joy and sorrow,<br>
+    Lies the meaning we'll find tomorrow.
+  </p>
+</div>
+
     {% endblock %}

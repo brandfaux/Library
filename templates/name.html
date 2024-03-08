@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Welcome Aboard</h1>
+<br><br>
+<h1 style="color:rgb(59, 121, 234);">Hello, {{ name }} </h1>
+<br><br>
+<h3>Now You can register yourself</h3>
+<br><br>
+<a href="{{ url_for('registration')}}"> Continue</a>
+{% endblock %}

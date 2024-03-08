@@ -1,0 +1,33 @@
+#logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: flashLogo 4s ease forwards;
+}
+
+@keyframes opacityToForty {
+  from {
+      opacity: 1;
+  }
+  to {
+      opacity: 0.4;
+  }
+}
+@keyframes flashLogo { 
+  0%, 100% { 
+      opacity: 0.4; 
+  }
+  50% { 
+      opacity: 1; 
+  }
+}
+
+
+
+#logo {
+  max-width: 100%;
+  height: auto;
+  opacity: 1;
+  animation: opacityToForty 4s ease forwards;
+}

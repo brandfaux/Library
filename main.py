@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for, render_template, request, session
+from flask import Flask, redirect, url_for, render_template, request, session, flash
 from flask_mysqldb import MySQL
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
@@ -51,7 +51,6 @@ def login():
 
     return render_template('login.html')
 
-
 @app.route('/register', methods=['POST', 'GET'])
 def registration():
     if request.method == 'POST':
@@ -73,7 +72,10 @@ def registration():
             return 'Error not registered'
     return render_template('register.html')
 
-
+@app.route('/registration_not_found')
+def registration_not_found():
+    # Render a page indicating that PRN was not found
+    return render_template('prn_not_found.html')
 @app.route('/inside')
 def home_user():
     if 'user' in session:
@@ -81,6 +83,27 @@ def home_user():
         return render_template('user.html', username=user)
     else:
         return redirect(url_for('login'))
+
+# New route for PRN search
+from flask import render_template
+
+@app.route('/search_prn', methods=['POST', 'GET'])
+def search_prn():
+    if request.method == 'POST':
+        prn_no = request.form['prn_no']
+        cur = mysql.connection.cursor()
+        cur.execute("SELECT name FROM prn WHERE full_prn = %s", (prn_no,))
+        result = cur.fetchone()
+        cur.close()
+
+        if result:
+            name = result[0]  # Extracting the name from the result
+            flash('Name: {}'.format(name))
+            return render_template('name.html', name=name)  # Pass the name as a variable to the template
+        else:
+            return render_template('search.html')
+    else:
+        return render_template('search.html')
 
 
 @app.route('/logout')

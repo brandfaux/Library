@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <!-- Add a search form after logging in -->
+    <h1>Verify Yourself as a Symbiotian</h1><br><br>
+    <form method="POST" action="{{ url_for('search_prn') }}">
+        <label for="prn_no">PRN:</label>
+        <input type="text" id="prn_no" name="prn_no" required>
+        <input type="submit" value="Search">
+    </form>
+
+{% endblock %}
