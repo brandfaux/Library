@@ -2,10 +2,16 @@
 
 {% block content %}
 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='logo.css') }}">
+
+    <div id="logo-container">
+        <img id="logo" src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+    </div>
+    <script src="{{ url_for('static', filename='logo.js') }}"></script>
+
 <h1>TAPS Club is synonyms for Excellence</h1><br><br>
 <h1>Project #3 Library Automation</h1><br><br>
 <p>Give up on your dreams and die</p><br><br>
-<img id="logo" src="{{ url_for('static', filename='sspu.png') }}" class="img-fluid" alt="SSPU">
 <a href="{{ url_for('login') }}">Login</a><br><br>
 <a href="{{ url_for('registration') }}">Register</a><br>
 

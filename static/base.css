@@ -1,0 +1,199 @@
+<style>
+
+a:link {
+  color: crimson;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: crimson;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+body{
+  background-color: #DC143C;
+  margin:0;
+}
+.facebook{
+  position:relative;
+  background-image: url(facebooklogo.png);
+  background-size: contain;
+}
+.twitter{
+  position:relative;
+  background-image: url(twitterlogo.png);
+  background-size: contain;
+}
+.youtube{
+  position:relative;
+  background-image: url(youtubelogo2.png);
+  background-size: contain;
+}
+.instagram{
+  position:relative;
+  background-image: url(instagramlogo.jpeg);
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.linkedin{
+  position:relative;
+  background-image: url(LinkedIn_icon.svg.png);
+  background-size: contain;
+}
+.staff{
+  position:relative;
+  padding-top:5px;
+  left:39%;
+  bottom:40px;
+  height:50px;
+  width:320px;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  border-top:4px solid black;
+  border-bottom:4px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  color:#DC143C;
+}
+.staff1{
+  height:320px;
+  width:95%;
+  position:relative;
+  left:2.5%;
+  display:flex;
+  align-items: center;
+}
+.staffphoto1{
+  position:relative;
+  left:10px;
+  height:300px;
+  width:300px;
+  border-radius: 200px;
+  background-color: lightgray;
+}
+.staffname1{
+  position:relative;
+  height:200px;
+  width:800px;
+  border-top: 6px solid;
+  border-bottom: 8px solid;
+  border-radius: 8px;
+  left:200px;
+}
+.staff2{
+  height:320px;
+  width:95%;
+  position:relative;
+  top:30px;
+  left:2.5%;
+  display:flex;
+  align-items: center;
+}
+.staffname2{
+  position:relative;
+  left:10px;
+  height:200px;
+  width:800px;
+  border-top: 6px solid ;
+  border-bottom: 8px solid ;
+  border-radius: 8px;
+}
+.staffphoto2{
+  position:relative;
+  left:200px;
+  height:300px;
+  width:300px;
+  border-radius: 200px;
+  background-color: lightgray;
+}
+.staff3{
+  height:320px;
+  width:95%;
+  position:relative;
+  top:30px;
+  left:2.5%;
+  display:flex;
+  align-items: center;
+}
+.staffphoto3{
+  position:relative;
+  left:10px;
+  height:300px;
+  width:300px;
+  border-radius: 200px;
+  background-color: lightgray;
+}
+.staffname3{
+  position:relative;
+  height:200px;
+  width:800px;
+  border-top: 6px solid;
+  border-bottom: 8px solid;
+  border-radius: 8px;
+  left:200px;
+}
+.name{
+  font-size: 32px;
+  font-family: 'Roboto', sans-serif;
+  position:relative;
+  top:10px;
+}
+.centrallib{
+  padding-left:30px;
+  padding-right:30px;
+  position: relative;
+  top:50px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 30px;
+}
+.centrallib1{
+  font-size:36px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  position:relative;
+  top:40px;
+  left:34%;
+  border-top:4px solid black;
+  border-bottom:4px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  width:42%;
+  height:50px;
+  padding-top:5px;
+  color:#DC143C;
+}
+
+.footer{
+  position:relative;
+  top:55px;
+  height:360px;
+  width:100%;
+  background-color: #1c3f55;
+  color:white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.numbers{
+  line-height:30px;
+}
+
+</style>

@@ -3,6 +3,7 @@ from flask_mysqldb import MySQL
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
+from flask_scss import Scss
 
 app = Flask(__name__)
 app.secret_key = 'hello'

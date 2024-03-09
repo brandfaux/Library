@@ -2,17 +2,184 @@
 
 {% block content %}
 
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='logo.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='photo.css') }}">
 
-    <div id="logo-container">
-        <img id="logo" src="{{ url_for('static', filename='logo.png') }}" alt="Logo">
+  <div class="message">
+	Sorry, your browser does not support CSS Grid. 😅
+  </div>
+  <section class="section">
+	<h1>Library Gallery</h1>
+	<div class="grid">
+	  <div class="item">
+		<div class="item__details">
+		  college
+		</div>
+	  </div>
+	  <div class="item item--large">
+		<div class="item__details">
+			college 
+		</div>
+	  </div>
+	  <div class="item item--medium">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--large">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--full">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--medium">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--large">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--medium">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--large">
+		<div class="item__details">
+			college 
+		</div>
+	  </div>
+	  <div class="item">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--medium">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--medium">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item item--large">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	  <div class="item">
+		<div class="item__details">
+			college
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+<br><br>
+  <div class="staff"><b>LIBRARY STAFF</b></div>
+
+<div class="staff1">
+    <div class="staffphoto1"></div>
+    <div class="staffname1">
+       <p class="name"> <b>Name:</b> Dr.Sunanda S. Phulari <br>
+        <b>Designation:</b> Librarian  </p>
     </div>
-    <script src="{{ url_for('static', filename='logo.js') }}"></script>
+</div>
+<div class="staff2">
+    <div class="staffname2">
+        <p class="name"> <b>Name :</b> Mr.Sagar R. Londhe <br>
+            <b>Designation:</b> Assistant Librarian </p>
+    </div>
+    <div class="staffphoto2"></div>
+</div>
+<div class="staff3">
+    <div class="staffphoto3"></div>
+    <div class="staffname3">
+       <p class="name"> <b>Name</b> : Mr.Virendra Mahadik <br>
+       <b>Designation:</b> Library Assistant  </p>
+    </div>
+</div>
+<p class="centrallib1"><b>OUR CENTRAL LIBRARY</b></p>
+<div class="centrallib">
+    <p>SSPU Central Library is housed in an independent building of 1830 Square Meter with huge Reading Hall, Digital Library Section, Reprographic Section, Reference Section, CD Library, Journals and Periodicals Section and well equipped with other facilities. As far as Information and Communication Technology (ICT) is concerned the library is well equipped with ICT infrastructure. The Library is automated with Koha Library Automation software. The books issue/return system is implemented with bar-code facility. The OPAC of the Library is available on the web to browse the availability of books. Library has installed a User Tracking System to maintain the record of daily library visitors.SSPU Central Library is housed in an independent building of 1830 Square Meter with huge Reading Hall, Digital Library Section, Reprographic Section, Reference Section, CD Library, Journals and Periodicals Section and well equipped with other facilities. As far as Information and Communication Technology (ICT) is concerned the library is well equipped with ICT infrastructure. The Library is automated with Koha Library Automation software. The books issue/return system is implemented with bar-code facility. The OPAC of the Library is available on the web to browse the availability of books. Library has installed a User Tracking System to maintain the record of daily library visitors.</p>
+       <p>The Library has a state of art Digital Library with 15 workstations for downloading E-books, E-journals from various subscribed databases. Library has good collection of print Books, Journals, Periodicals, Magazines and Newspapers. Its electronic collection comprises more than 2,00,000 E-books and E-journals which can be accessible 24 x 7 on and off the campus to the students, faculty and other research scholars. SSPU Central Library remains open from 9:00 am. to 9:00 pm. i.e. 12 Hrs in a day.The Library has a state of art Digital Library with 15 workstations for downloading E-books, E-journals from various subscribed databases. Library has good collection of print Books, Journals, Periodicals, Magazines and Newspapers. Its electronic collection comprises more than 2,00,000 E-books and E-journals which can be accessible 24 x 7 on and off the campus to the students, faculty and other research scholars. SSPU Central Library remains open from 9:00 am. to 9:00 pm. i.e. 12 Hrs in a day.</p>
 
-<h1>TAPS Club is synonyms for Excellence</h1><br><br>
-<h1>Project #3 Library Automation</h1><br><br>
-<p>Give up on your dreams and die</p><br><br>
-<a href="{{ url_for('login') }}">Login</a><br><br>
-<a href="{{ url_for('registration') }}">Register</a><br>
+</div>
+</div>
+
+  <div class="footer">
+    
+    <div class="footer1">
+        <div class="contact">CONTACT<br><br></div>
+        <div class="forreception">
+            <b>For Reception</b><br><br>
+            02027187768<br><br>
+        </div>
+        <div class="fornewadm">
+            <b>For New Admission</b><br><br>
+            <div class="numbers">
+                +91-7796638369<br>
+                +91-7796638376<br>
+                +91-7796695604<br><br>
+            </div>
+        </div>
+        <div class="address">
+            SSPU,Kiwale,ADjoining Pune Mumbai Expressway,<br><br>
+            Pune-412 101
+        </div>
+    </div>
+
+    <div class="footer1">
+        <div class="contact">CONTACT<br><br></div>
+        <div class="forreception">
+            <b>For Reception</b><br><br>
+            02027187768<br><br>
+        </div>
+        <div class="fornewadm">
+            <b>For New Admission</b><br><br>
+            <div class="numbers">
+                +91-7796638369<br>
+                +91-7796638376<br>
+                +91-7796695604<br><br>
+            </div>
+        </div>
+        <div class="address">
+            SSPU,Kiwale,ADjoining Pune Mumbai Expressway,<br><br>
+            Pune-412 101
+        </div>
+    </div>
+
+    <div class="footer1">
+        <div class="contact">CONTACT<br><br></div>
+        <div class="forreception">
+            <b>For Reception</b><br><br>
+            02027187768<br><br>
+        </div>
+        <div class="fornewadm">
+            <b>For New Admission</b><br><br>
+            <div class="numbers">
+                +91-7796638369<br>
+                +91-7796638376<br>
+                +91-7796695604<br><br>
+            </div>
+        </div>
+        <div class="address">
+            SSPU,Kiwale,ADjoining Pune Mumbai Expressway,<br><br>
+            Pune-412 101
+        </div>
+</div>
 
 {% endblock %}
